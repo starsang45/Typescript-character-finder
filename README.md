@@ -41,24 +41,49 @@ This project is my attempt to build an **interactive character guide** that lets
 
 ---
 
-## 🎯 Why I Made This
-I wanted to strengthen my **frontend skills** and practice building real-world features, specifically:
-- Using **React state** (`useState`) for interactivity
-- Building a **controlled input** (search bar)
-- Filtering lists with **JavaScript** (`.filter()` + `.includes()`)
-- Creating a **responsive design** with Tailwind CSS
-- Organizing files in a scalable way for future features
+
+## 📂 Project Structure
+```plaintext
+breaking-bad-project/
+├── public/
+│   └── characters.json      # Character data
+├── src/
+│   ├── components/
+│   │   └── CharacterList.tsx # Displays filtered list
+│   ├── assets/              # (future images, icons)
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+└── vite-env.d.ts
+```
 
 ---
 
-## 📂 Project Structure
-breaking-bad-project/
-├── public/
-│ └── characters.json # Character data
-├── src/
-│ ├── components/
-│ │ └── CharacterList.tsx # Displays filtered list
-│ ├── assets/ # (future images, icons)
-│ ├── App.tsx
-│ ├── main.tsx
-│ └── index.css
+## 🎯 Why I Made This
+
+I wanted to practice and improve my frontend development skills:
+
+- Using **React state** (`useState`)  
+- Building a **controlled input** (search bar)  
+- Filtering lists with **JavaScript** (`.filter()` + `.includes()`)  
+- Creating a clean UI with **Tailwind CSS**
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/Typescript-character-finder.git
+   cd Typescript-character-finder
+
+2. Install dependencies:
+    npm install
+
+3. Run the development server:
+    npm run dev
+4. Open in your browser:
+    http://localhost:5173/
+
+## Author
+Victor Kim – creator and Breaking Bad fan
