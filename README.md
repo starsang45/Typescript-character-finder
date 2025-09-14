@@ -1,6 +1,6 @@
 ## Demo
 
-![App Demo](./output.gif)
+![App Demo](./assets/output.gif)
 
 
 # Typescript-character-finder
