@@ -1,54 +1,89 @@
-# React + TypeScript + Vite
+## Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![App Demo](./assets/output.gif)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Typescript-character-finder
 
-## Expanding the ESLint configuration
+## 📖 About This Project
+**Typescript-character-finder** is a solo project built with **TypeScript** and **React**.  
+It started as a live search bar for *Breaking Bad* characters and is now being expanded into a more comprehensive **character encyclopedia** for fans and creative writers.  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+As a huge fan of *Breaking Bad*, I’ve always been fascinated by the complex relationships between characters and the dramatic rise and fall of Walter White’s life.  
+This project is my attempt to build an **interactive character guide** that lets users explore the cast, search characters in real time, and view detailed information about each one—all inside a **clean, responsive UI**.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## ✨ Features
+- 🔎 **Live Search Bar**  
+  Type into the search bar and instantly filter characters by name.  
+  Example: typing `bo` will display **“Bob”** if it exists in the dataset.  
+
+- 📱 **Responsive Design**  
+  Works seamlessly across desktop and mobile with a clean layout.  
+
+- ⚡ **Real-Time Updates**  
+  Results update immediately as you type, showing either matched names or a “No results” message.  
+
+- 🎨 **Simple & Scalable UI**  
+  Designed with **Tailwind CSS** for fast iteration and easy customization.  
+
+---
+
+## 🛠 Tech Stack
+| Category        | Technology           | Description |
+|-----------------|----------------------|-------------|
+| **Front-End**   | React.js + TypeScript | Build the UI and enforce type safety |
+| **Styling**     | Tailwind CSS         | Utility-first CSS framework for clean & responsive design |
+| **Tooling**     | Vite                 | Fast bundler for modern front-end projects |
+| **Data**        | JSON (static file)   | Character data served from `/public/characters.json` |
+| **Deployment** *(optional)* | Vercel / Netlify | Hosting options for deploying the app |
+
+---
+
+
+## 📂 Project Structure
+```plaintext
+breaking-bad-project/
+├── public/
+│   └── characters.json      # Character data
+├── src/
+│   ├── components/
+│   │   └── CharacterList.tsx # Displays filtered list
+│   ├── assets/              # (future images, icons)
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+└── vite-env.d.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🎯 Why I Made This
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+I wanted to practice and improve my frontend development skills:
+
+- Using **React state** (`useState`)  
+- Building a **controlled input** (search bar)  
+- Filtering lists with **JavaScript** (`.filter()` + `.includes()`)  
+- Creating a clean UI with **Tailwind CSS**
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/Typescript-character-finder.git
+   cd Typescript-character-finder
+
+2. Install dependencies:
+    npm install
+
+3. Run the development server:
+    npm run dev
+4. Open in your browser:
+    http://localhost:5173/
+
+## Author
+Victor Kim – creator and Breaking Bad fan
